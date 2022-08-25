@@ -24,11 +24,11 @@ namespace ArtNet.Runtime
         #region public field
         [SerializeField] private string host;
         [SerializeField] private int port = 6454;
-        [SerializeField] private event Action<ArtNetData> onDataReceived;
 
+        public event Action<ArtNetData> onDataReceived;
         public bool IsActive => _client != null;
         #endregion
-        
+
         #region private field
         private UdpClient _client;
         private CancellationTokenSource _cts;
@@ -77,6 +77,7 @@ namespace ArtNet.Runtime
             if (_bufferStream.Count > 0)
             {
                 var buffer = _bufferStream.Dequeue();
+
                 if(ArtNetData.IsArtNet(buffer)) 
                     onDataReceived?.Invoke(new ArtNetData(buffer));
             }
