@@ -1,4 +1,16 @@
 ![Unity version](https://img.shields.io/badge/Unity-2020.3.16f1-blue.svg)
+
+# Project details
+forked from Taku3939/ArtNetReceiver
+
+## Changes from the forked project
+・Unityのバージョンをアップグレードしました (2020.3.6f1から2020.3.16f1へ)
+・自身のプロジェクトへ流用するためのコード改変
+
+
+
+## -=+=--=+=--=+=- 以下フォーク元プロジェクトのりどみ -=+=--=+=--=+=-
+
 # ArtNetReceiver
 Unity内でArtNetでデータを簡易に受信と録画するためのプロジェクト
 
