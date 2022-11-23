@@ -1,6 +1,6 @@
 using ArtNet.Runtime;
 
-namespace Amari.LiveSystem
+namespace Amari.ArtNet
 {
     public interface IArtNetDevice
     {
